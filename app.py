@@ -75,7 +75,7 @@ def copy_password(account):
     """
     return Credentials.copy_password(account)
 
-def passlocker():
+def pslocker():
     print("Hello Welcome to your Accounts Password App..\n Please enter one of the following to proceed.\n CA ---  Create New Account  \n HA---  Have An Account  \n")
     short_code=input("").lower().strip()
     if short_code == "ca":
@@ -183,5 +183,5 @@ def passlocker():
         print("Please enter a valid input to continue")
 
 if __name__ == '__main__':
-    passlocker()
+    pslocker()
 
