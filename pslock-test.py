@@ -38,6 +38,15 @@ class TestCredentials(unittest.TestCase):
     def test_save_many_accounts(self):
 
         self.new_credential.save_details()
-        test_credential = Credentials("Twitter","lizgikonyo","Mf68pfk@") 
+        test_credential = Credentials("Twitter","lizgikonyo","Bq68pfk@") 
         test_credential.save_details()
         self.assertEqual(len(Credentials.credentials_list),2)
+
+    def test_delete_credential(self):
+      
+        self.new_credential.save_details()
+        test_credential = Credentials("Twitter","lizgikonyo","Bq68pfk@")
+        test_credential.save_details()
+
+        self.new_credential.delete_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
