@@ -76,16 +76,16 @@ def copy_password(account):
     return Credentials.copy_password(account)
 
 def passlocker():
-    print("Hello Welcome to your Accounts Password App..\n Please enter one of the following to proceed.\n CA ---  Create New Account  \n LI ---  Have An Account  \n")
+    print("Hello Welcome to your Accounts Password App..\n Please enter one of the following to proceed.\n CA ---  Create New Account  \n HA---  Have An Account  \n")
     short_code=input("").lower().strip()
     if short_code == "ca":
         print("Sign Up")
         print('*' * 50)
         username = input("User_name: ")
         while True:
-            print(" TP - To type your own pasword:\n GP - To generate random Password")
+            print(" IP - To input your own pasword:\n GP - To generate random Password")
             password_Choice = input().lower().strip()
-            if password_Choice == 'tp':
+            if password_Choice == 'ip':
                 password = input("Enter Password\n")
                 break
             elif password_Choice == 'gp':
@@ -93,4 +93,18 @@ def passlocker():
                 break
             else:
                 print("Invalid password please try again")
+                save_user(create_new_user(username,password))
+        print("*"*85)
+        print(f"Hello {username}, Your account has been created succesfully! Your password is: {password}")
+        print("*"*17)
+    elif short_code == "ha":
+        print("*"*54)
+        print("Enter your User name and your Password to log in:")
+        print('*' * 50)
+        username = input("User name: ")
+        password = input("password: ")
+        login = login_user(username,password)
+        if login_user == login:
+            print(f"Hello {username}.Welcome To PassWord Locker")  
+            print('\n')
       
