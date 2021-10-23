@@ -22,11 +22,11 @@ Python3.9 for setup.
 ## How to Run the application!
 To run the application, open the cloned file in terminal and run the following commands:
 
-      $ chmod +x run.py
+      $ chmod +x app.py
 
-      $ ./run.py
+      $ ./app.py
 
-To run test for the application *use $ python3.9 run_test.py
+To run test for the application *use $ python3.9 pslock_test.py
 
 ## User Story
 As a user I would like to... :

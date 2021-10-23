@@ -20,7 +20,7 @@ def display_user():
     return User.display_user()
 def login_user(username,password):
     """
-    function that checks whether a user exist and then login the user in.
+    function that checks user
     """
   
     check_user = Credentials.verify_user(username,password)
@@ -52,7 +52,7 @@ def delete_credential(credentials):
 
 def find_credential(account):
     """
-    Function that finds a Credentials by an account name and returns the Credentials that belong to that account
+    Function that finds a Credentials by an account name and returns the Credentials for it
     """
     return Credentials.find_credential(account)
 def check_credendtials(account):
