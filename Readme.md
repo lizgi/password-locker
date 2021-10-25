@@ -63,7 +63,7 @@ As a user I would like to... :
 If you have any question or contributions, please email me at[elizabeth.gikonyo@student.moringaschool.com]
 
 ## License
-
+https://github.com/lizgi/password-locker/blob/master/LICENSE
 
 * Copyright (c) 2021 Lizzy
 
